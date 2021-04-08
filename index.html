@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Inici</title>
+
+        <link href="./styleIndex.css" rel="stylesheet" type="text/css" />
+        <script src="./scriptIndex.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./img/prop2.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;1,700&family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      
+      </head> 
+
+      <body>
+        <div class="cookies" id="cookies">
+
+        <div class="subCookies" id="subCookies">
+          <p class="txtCookies">This site uses cookies. Accept them to continue. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Augue neque gravida in fermentum et sollicitudin ac orci. Nisl purus in mollis nunc sed id semper risus. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Augue neque gravida in fermentum et sollicitudin ac orci. Nisl purus in mollis nunc sed id semper risus. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Augue neque gravida in fermentum et sollicitudin ac orci. Nisl purus in mollis nunc sed id semper risus.</p>
+          <button class="buttonCookies" onclick="hideCookies()">Accept</button>
+        </div>
+
+        </div>
+
+        <div class="topnav" id="Topnavi">
+         
+          <a href="./index.html" class="active"> DRONE <br> INFO </a>
+          <a href="#footer2">Sobre la pàgina</a>
+          <a href="#contact">Fotografia</a>
+          <a href="./drone.html">Drons</a>
+          <a href="./fpv.html">FPV</a>
+          <a href="./dicc.html">Diccionari</a>
+          <a href="javascript:void(0);" class="icon" onclick="menuClick()">
+            <p class="fa fa-bars">=</p>
+          </a>
+
+          
+          <input type="text" id="buscador" onkeyup="buscar()" placeholder="Buscar..." title="Search">
+          
+        </div>
+
+        <div id="sobrePag" class="sobrePagC">
+          <p class="txtPag"> <a href="./dicc.html" style="text-decoration: none; color: white;">Sobre la pàgina . . .</a></p>
+        </div>
+
+           
+
+          <div id="divIntro">
+
+                <p id="tittleIntro" class="tittleIntro"> APRÈN I INFORMAT <br> SOBRE DRONS </p>
+                <p id="subTittleIntro"> Learn , buy , search... all about quadcopters!   </p>
+                <a href="#divCont" style="text-decoration: none;"> <p id="buttonDiscover" > Discover </p> </a>
+
+          </div>
+
+        
+
+          <div id="WhoAre1">
+              <p id="tittleWhoAre"> About </p>
+              <hr id="linea">
+              <p id="textWhoAre"> This is the first website I posted on the internet, I have been trying it for three months ago, and this is the final version. It has been made with HTML 5 , Javascript and CSS, so, below you will find the code if you want to improve the deign or the content.  This website is created to inform people about drones and quadcopters, and to help you enter this world!</p>
+              <a href="" style="text-decoration: none;"> <p id="buttonWhoAre"> Learn more... </p> </a>
+
+          </div>
+
+          <div class="types">
+
+            <div class="choose">
+              <div class="chFpv" onclick="clickFpv()"> <a href="#link1" style="text-decoration: none;">Fpv</a> </div>
+              <div class="chPro" onclick="clickPro()"> <a href="#link2" style="text-decoration: none;">Profesional</a> </div>
+              <div class="chPho" onclick="clickPho()"> <a href="#link3" style="text-decoration: none;">Photography</a> </div>
+            </div>
+
+           
+
+            <div class="imgChoose">
+              <div class="linkCh" id="link1"><p>Hoasloksdsd</p></div>
+              <div class="linkCh" id="link2"><p>Holaols</p></div>
+              <div class="linkCh" id="link3"><p>asdofsñdf</p></div>
+            </div>
+
+          </div>
+
+
+          <div id="divWays">
+            <p id="tittleWays"> Where can you fly<br> your drone </p>
+            <hr id="lineaWays">
+            <p id="textWays"> Search in a map where you can fly, take photos, and have fun with <br> your drone in Spain. </p>
+            <p id="buttonWays"> See more... </p>
+          </div>
+          <div id="fotoWays"></div>
+
+
+         <div id="divOthers">
+
+          <div id="divTutorials">
+            <div id="imgOthers1"></div>
+            <p id="tittleOthers">Tutorials </p>
+            <p id="textOthers">Learn with some Tutorials how to fly, build, soldering...</p>
+            <a style="text-decoration: none;" href="#"> <p id="buttonOthers"> Learn More... </p> </a>
+          </div>
+
+          <div id="divBuilds">
+            <div id="imgOthers2"></div>
+            <p id="tittleOthers">Buildings </p>
+            <p id="textOthers">Drone builds.</p>
+            <a style="text-decoration: none;" href="#"> <p id="buttonOthers"> Learn More... </p> </a>
+          </div>
+
+          <div id="divEvents">
+            <div id="imgOthers3"></div>
+            <p id="tittleOthers">Photography </p>
+            <p id="textOthers">Tricks for aerial photography.</p>
+            <a style="text-decoration: none;" href="#"> <p id="buttonOthers"> Learn More... </p> </a>
+          </div>
+
+         </div>
+
+
+         <div id="phoneInfo">
+          <p id="tittlePhone"> See the web <br> in your phone! </p>
+          <hr id="lineaPhone">
+          <p id="textPhone"> This is a web page that has been created programming and writing with html5 and for the purposes of inform and help those who want to know more about drones. Below you will find the link to download the code if you want to improve the content, the design, or if you have simply found an error. </p>
+          <a href="./codeHtml.txt"><p id="buttonCode1">HTML code.</p></a>
+          <a href="./codeCSS.txt"><p id="buttonCode2">CSS code.</p></a>
+          
+         </div>
+
+
+
+          <div id="footer">
+
+            <div id="footer1">
+
+              
+              <p style="font-family: Poppins ExtraBold; margin-top: 5%; margin-left: 40%; color: white; font-size: 110%; margin-bottom: 3%;"> Navigate </p>
+              <a id="footMenu" href="#top"> · Home </a> <br>
+              <a id="footMenu" href="" > · About Us </a> <br>
+              <a id="footMenu" href=""> · Discover </a> <br>
+              <a id="footMenu" href=""> · Ways </a> <br>
+
+              <p style="color: white; font-family: Poppins ExtraBold; font-size: 110%; margin-bottom: 5%; margin-left: 40%; margin-top: 12%;"> About Us </p>
+              <p id="aboutFoot"> Uiwuh ijfis dfkjndsfijksdjfni uin sk  udj  khsdbf hsbkdhfi sdu jskdufidjiw jiwksdj i. </p>
+
+            </div>
+
+            <div id="footer2">
+
+              <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      
+                <input id="buttonIn" type="submit" value="Contact">
+               
+              </form>
+
+              <p style="text-align: center; font-family: Poppins; color: white; font-size: 80%; margin-top: 5%;"> Copyright © ℗ Reserved </p>
+              <hr style="width: 90%; margin-left: 5%; margin-top: 5%; margin-bottom: 10%; border-width: 0.01%; border-color: white;">
+
+            </div>
+
+            <div id="footer3">
+
+              <button id="rTop"> <a href="#Topnavi" style="text-decoration: none; color: black;">TOP</a> </button>
+
+              <span>Photo by <a href="https://unsplash.com/@florianolv?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Florian Olivo</a> on <a href="https://unsplash.com/s/photos/html?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@akin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Akin Cakiner</a> on <a href="https://unsplash.com/s/photos/car-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@aviosly?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Avi Waxman</a> on <a href="https://unsplash.com/s/photos/racing-drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ThisisEngineering RAEng</a> on <a href="https://unsplash.com/s/photos/soldering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@dose?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dose Media</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@craig_bradford?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Craig Bradford</a> on <a href="https://unsplash.com/s/photos/aerial-photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@neonbrand?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">NeONBRAND</a> on <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            
+              <span>Photo by <a href="https://unsplash.com/@dyana?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Diana Măceşanu</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@inscribeful?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kaleb Kendall</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@phcsantos?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pedro Henrique Santos</a> on <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@emp_creative?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sherman Yang</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@petefogden?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Peter Fogden</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@serjosoza?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">sergio souza</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+              <span>Photo by <a href="https://unsplash.com/@sir_jarvis?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Matthew</a> on <a href="https://unsplash.com/s/photos/aerial-photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@we_are_rising?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">lucas Favre</a> on <a href="https://unsplash.com/s/photos/gear-drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@90angle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">90 angle</a> on <a href="https://unsplash.com/s/photos/gear-drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+              </span>Photo by <a href="https://unsplash.com/@joshuafuller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Fuller</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+            </div>
+
+          </div>
+
+         
+
+  
+      </body>
+
+</html>

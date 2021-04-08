@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Home</title>
+
+        <link href="./styleDrone.css" rel="stylesheet" type="text/css" />
+        <script src="./scriptDrone.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./img/prop2.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">  
+      
+      </head> 
+
+      <body>
+
+        <div class="topnav" id="Topnavi">
+         
+          <a href="./index.html" class="active"> DRONE <br> INFO </a>
+          <a href="#footer2">About</a>
+          <a href="#contact">Photography</a>
+          <a href="./drone.html">Drone</a>
+          <a href="./fpv.html">FPV</a>
+          <a href="./dicc.html">Diccionaire</a>
+          <a href="javascript:void(0);" class="icon" onclick="menuClick()">
+            <p class="fa fa-bars">=</p>
+          </a>
+
+          
+          <input type="text" id="buscador" onkeyup="buscar()" placeholder="Search...  " title="Search">
+         
+          <div class="divBuscar" id="divBuscar">
+            
+            <li id="closeBuscarLi" onclick="closeBuscar()"> × </li>
+            <ul class="llistaBuscar" id="llistaBuscar">
+              <li><a href="#">Drone</a></li>
+              <li><a href="#">Motors</a></li>
+              <li><a href="#">ESC</a></li>
+              <li><a href="#">Fpv camera</a></li>
+              <li><a href="#">Flight Controler (FC)</a></li>
+              <li><a href="#">VTX</a></li>
+              <li><a href="#">Antennas</a></li>
+              <li><a href="#">Googles</a></li>
+              <li><a href="#">Simulators</a></li>
+              <li><a href="#">Transmitter</a></li>
+              <li><a href="./fpv.html">FPV</a></li>
+              <li><a href="#">Cinematic</a></li>
+              <li><a href="#">DJI</a></li>
+              <li><a href="#">Cinewhoop</a></li>
+              <li><a href="#">Builds</a></li>
+              <li><a href="#">Buy</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Restrictions</a></li>
+              <li><a href="#">Where to fly</a></li>
+              <li><a href="#">Parts</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Long Range</a></li>
+              <li><a href="#">Freestyle</a></li>
+              <li><a href="#">Profesional</a></li>
+              
+            </ul>
+            
+          </div>
+
+          <script>
+            function closeBuscar(){
+              document.getElementById("divBuscar").style.display = "none";
+              document.getElementById("buscador").value = "";
+            }
+
+            function buscar() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("buscador");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("llistaBuscar");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+
+            <script>
+              var input = document.getElementById("buscador");
+
+              input.addEventListener("keyup", function(event) {
+             
+              if (event.keyCode === 13) {              
+                event.preventDefault();
+                document.getElementById("divBuscar").style.display = "block";
+                }
+              });
+            </script>
+
+        </div>
+
+        <div id="divIntro">
+          <div class="divIntroAnimation">
+              <p id="tittleIntro" class="tittleIntro">Drones</p>
+              <p id="subTittleIntro"> General information  </p>
+          </div>
+        </div>
+
+        <div id="general">
+
+          <div id="textDiv">
+
+            <p id="tittle">What is a drone ?</p>
+            <p id="text">Ac tortor vitae purus faucibus ornare suspendisse sed. Eget duis at tellus at. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Ornare massa eget egestas purus viverra accumsan. Tellus rutrum tellus pellentesque eu tincidunt.
+              Ac tortor dignissim convallis aenean et tortor at. Maecenas accumsan lacus vel facilisis volutpat est velit. Quam pellentesque nec nam aliquam sem. Semper eget duis at tellus at urna. Sit amet volutpat consequat mauris nunc congue nisi. Diam vel quam elementum pulvinar etiam non quam lacus suspendisse. Tortor consequat id porta nibh venenatis cras.
+            </p>
+            
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+          <div id="footer">
+
+            <div id="footer1">
+
+              
+              <p style="font-family: Poppins ExtraBold; margin-top: 5%; margin-left: 40%; color: white; font-size: 110%; margin-bottom: 3%;"> Navigate </p>
+              <a id="footMenu" href="#top"> · Home </a> <br>
+              <a id="footMenu" href="" > · About Us </a> <br>
+              <a id="footMenu" href=""> · Discover </a> <br>
+              <a id="footMenu" href=""> · Ways </a> <br>
+
+              <p style="color: white; font-family: Poppins ExtraBold; font-size: 110%; margin-bottom: 5%; margin-left: 40%; margin-top: 12%;"> About Us </p>
+              <p id="aboutFoot"> Uiwuh ijfis dfkjndsfijksdjfni uin sk  udj  khsdbf hsbkdhfi sdu jskdufidjiw jiwksdj i. </p>
+
+            </div>
+
+            <div id="footer2">
+
+              <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      
+                <input id="buttonIn" type="submit" value="Contact">
+               
+              </form>
+
+              <p style="text-align: center; font-family: Poppins; color: white; font-size: 80%; margin-top: 5%;"> Copyright © ℗ Reserved </p>
+              <hr style="width: 90%; margin-left: 5%; margin-top: 5%; margin-bottom: 10%; border-width: 0.01%; border-color: white;">
+
+            </div>
+
+            <div id="footer3">
+
+              <span>Photo by <a href="https://unsplash.com/@florianolv?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Florian Olivo</a> on <a href="https://unsplash.com/s/photos/html?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@akin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Akin Cakiner</a> on <a href="https://unsplash.com/s/photos/car-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@aviosly?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Avi Waxman</a> on <a href="https://unsplash.com/s/photos/racing-drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ThisisEngineering RAEng</a> on <a href="https://unsplash.com/s/photos/soldering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@dose?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dose Media</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@craig_bradford?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Craig Bradford</a> on <a href="https://unsplash.com/s/photos/aerial-photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@neonbrand?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">NeONBRAND</a> on <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            
+              <span>Photo by <a href="https://unsplash.com/@dyana?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Diana Măceşanu</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@inscribeful?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kaleb Kendall</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@phcsantos?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pedro Henrique Santos</a> on <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            </div>
+
+          </div>
+
+         
+
+  
+      </body>
+
+</html>

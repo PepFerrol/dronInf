@@ -1,0 +1,144 @@
+ <ul class="llistaResults" id="llistaResults2">
+
+            <li>
+              <div id="li">
+              <div id="h"> <h1>1s, 2s, 3s, 4s</h1> </div>
+              <div id="p"><p>These numbers indicate the number of cells that can have a LiPo Battery. More cells ("S"), more voltage and more power.  The common voltage for one cell is 3.7V</p> </div>
+              </div>
+            </li>
+            <li>
+              <div id="li">
+              <div id="h"><h1>800MHz, 5.8Ghz</h1> </div>
+              <div id="p"><p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p> </div>
+              </li>
+            </li>
+            <li>
+              <h1>1", 2", 3", 4", 5"</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Acro</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>ACC</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>ADC</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>AH</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Air Mode</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>ALT</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Angle Mode</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>AUX</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Band</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>BF</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>BNF</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Bind</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Brushed Motor</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Brushless Motor</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Buzzer</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Cell</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>CF</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Channel</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>CG</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>CW</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>CCW</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>DC</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>DFU</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>ELEV</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>ESC</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>Failsafe</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>F1, F2, F3, F4</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>FC</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>FOV</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>FPV</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+            <li>
+              <h1>FW</h1>
+              <p>S is the kasf ksjf ksjd kdjhksdh f sd hf dsh ia  oa d  ai djk judi jiuw k f</p>
+            </li>
+
+          </ul>

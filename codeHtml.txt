@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Home</title>
+
+        <link href="./styleIndex.css" rel="stylesheet" type="text/css" />
+        <script src="indexScript.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./img/adventure-1868817_1920.jpg">
+       
+      </head> 
+
+      <body>
+
+
+        <div class="topnav" id="Topnavi">
+         
+          <a href="./index.html" class="active"> DRONE <br> INFO </a>
+          <a href="#footer2">About</a>
+          <a href="#contact">Photos</a>
+          <a href="./whatIsIt.html">What is it</a>
+          <a href="#about">FPV</a>
+          <a href="#tittleCont">Diccionaire</a>
+          <a href="javascript:void(0);" class="icon" onclick="menuClick()">
+            <p class="fa fa-bars">=</p>
+          </a>
+
+          
+          <input type="text" id="buscador" onkeyup="buscar()" placeholder="Search.." title="Search">
+          <input type="button" id="closeBuscador" onclick="closeBuscar()" value="×">
+
+          <div class="divBuscar" id="divBuscar">
+            
+            <li id="closeBuscarLi" onclick="closeBuscar()"> × </li>
+          <ul class="llistaBuscar" id="llistaBuscar">
+            <li><a href="#">Drone</a></li>
+            <li><a href="#">Motors</a></li>
+            <li><a href="#">ESC</a></li>
+            <li><a href="#">Fpv camera</a></li>
+            <li><a href="#">Flight Controler (FC)</a></li>
+            <li><a href="#">VTX</a></li>
+            <li><a href="#">Antennas</a></li>
+            <li><a href="#">Googles</a></li>
+            <li><a href="#">Simulators</a></li>
+            <li><a href="#">Transmitter</a></li>
+            <li><a href="#">FPV</a></li>
+            <li><a href="#">Cinematic</a></li>
+            <li><a href="#">DJI</a></li>
+            <li><a href="#">Cinewhoop</a></li>
+            <li><a href="#">Builds</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Restrictions</a></li>
+            <li><a href="#">Where to fly</a></li>
+            <li><a href="#">Parts</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Long Range</a></li>
+            <li><a href="#">Freestyle</a></li>
+            <li><a href="#">Profesional</a></li>
+            
+          </ul>
+          </div>
+
+          <script>
+            function closeBuscar(){
+              document.getElementById("divBuscar").style.display = "none";
+              document.getElementById("buscador").value = "";
+            }
+
+            function buscar() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("buscador");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("llistaBuscar");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+
+            <script>
+              var input = document.getElementById("buscador");
+
+              input.addEventListener("keyup", function(event) {
+             
+              if (event.keyCode === 13) {              
+                event.preventDefault();
+                document.getElementById("divBuscar").style.display = "block";
+                }
+              });
+            </script>
+
+        </div>
+
+
+        <div id="divIntro">
+              <p id="tittleIntro"> See the world from a different <br> point of view </p>
+              <p id="subTittleIntro"> Learn , buy , search... all about quadcopters!  </p>
+              <a href="#divCont" style="text-decoration: none;"> <p id="buttonDiscover" > Discover </p> </a>
+        
+        </div>
+
+        
+
+          <div id="WhoAre1">
+              <p id="tittleWhoAre"> About </p>
+              <hr id="linea">
+              <p id="textWhoAre"> This is the first website I posted on the internet, I have been trying these for three months ago, and this is the final version. This website is created to raise awareness and inform people about the pollution we make while traveling as we conventionally do. <br> So here, we will give you alternatives and solutions! </p>
+              <a href="" style="text-decoration: none;"> <p id="buttonWhoAre"> Learn more... </p> </a>
+
+          </div>
+
+          <div id="WhoAre2">
+            
+          </div>
+
+          <div id="divCont">
+            <p id="tittleCont"> Types of drones </p>
+            <hr width="80%">
+            <p id="subTittleCont"> Search and find the countries or places that you would like to visit. </p>
+            
+              <div class="Cont1">
+                <a href="./southAmerica.html">
+                <img src="./img/dronePhoto2.jpg" class="imgCont1">
+                <div class="textCont1">
+                  <div class="text"> PHOTOGRAPHY </div>
+                </div>
+                </a>
+
+              </div>
+
+              <div class="Cont2">
+                <a href="#top">
+                <img src="./img/droneFPV.jpg" class="imgCont2">
+                <div class="textCont2">
+                  <div class="text"> RACING / FPV </div>
+                </div>
+                </a>
+
+              </div>
+
+              <div class="Cont3">
+                <a href="#top">
+                <img src="./img/droneToy.jpg" class="imgCont3">
+                <a href="#top"> <div class="textCont3">
+                  <div class="text"> TOYS </div>
+                </div>
+                </a>
+
+              </div>
+
+              <div class="Cont4">
+                <a href="#top">
+                <img src="./img/droneSmall2.jpg" class="imgCont4">
+                <a href="#top"> <div class="textCont4">
+                  <div class="text"> SMALL </div>
+                </div>
+                </a>
+
+              </div>
+
+              <div class="Cont5">
+                <a href="#top">
+                <img src="./img/dronePro2.jpg" class="imgCont5">
+                <a href="#top"> <div class="textCont5">
+                  <div class="text"> PROFESIONAL </div>
+                </div>
+                </a>
+
+              </div>
+
+          </div>
+
+          <div id="divWays">
+            <p id="tittleWays"> Where can you fly<br> your drone </p>
+            <hr id="lineaWays">
+            <p id="textWays"> Search in a map where you can fly, take photos, and have fun with <br> your drone in Spain. </p>
+            <p id="buttonWays"> See more... </p>
+          </div>
+          <div id="fotoWays"></div>
+
+
+         <div id="divOthers">
+
+          <div id="divTutorials">
+            <div id="imgOthers1"></div>
+            <p id="tittleOthers">Tutorials </p>
+            <p id="textOthers">Learn with some Tutorials how to fly, build, soldering...</p>
+            <a style="text-decoration: none;" href="#"> <p id="buttonOthers"> Learn More... </p> </a>
+          </div>
+
+          <div id="divBuilds">
+            <div id="imgOthers2"></div>
+            <p id="tittleOthers">Buildings </p>
+            <p id="textOthers">Drone builds.</p>
+            <a style="text-decoration: none;" href="#"> <p id="buttonOthers"> Learn More... </p> </a>
+          </div>
+
+          <div id="divEvents">
+            <div id="imgOthers3"></div>
+            <p id="tittleOthers">Events </p>
+            <p id="textOthers">Events of the year, races, new products...</p>
+            <a style="text-decoration: none;" href="#"> <p id="buttonOthers"> Learn More... </p> </a>
+          </div>
+
+         </div>
+
+
+         <div id="phoneInfo">
+          <p id="tittlePhone"> See the web <br> in your phone! </p>
+          <hr id="lineaPhone">
+          <p id="textPhone"> This is a web page that has been created programming and writing with html5 and for the purposes of inform and help those who want to know more about drones. Below you will find the link to download the code if you want to improve the content, the design, or if you have simply found an error. </p>
+         </div>
+         <div id="imgPhone"></div>
+
+
+
+          <div id="footer">
+
+            <div id="footer1">
+
+              
+              <p style="font-family: Poppins ExtraBold; margin-top: 5%; margin-left: 40%; color: white; font-size: 110%; margin-bottom: 3%;"> Navigate </p>
+              <a id="footMenu" href="#top"> · Home </a> <br>
+              <a id="footMenu" href="" > · About Us </a> <br>
+              <a id="footMenu" href=""> · Discover </a> <br>
+              <a id="footMenu" href=""> · Ways </a> <br>
+
+              <p style="color: white; font-family: Poppins ExtraBold; font-size: 110%; margin-bottom: 5%; margin-left: 40%; margin-top: 12%;"> About Us </p>
+              <p id="aboutFoot"> Uiwuh ijfis dfkjndsfijksdjfni uin sk  udj  khsdbf hsbkdhfi sdu jskdufidjiw jiwksdj i. </p>
+
+            </div>
+
+            <div id="footer2">
+
+              <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      
+                <input id="buttonIn" type="submit" value="Contact">
+               
+              </form>
+
+              <p style="text-align: center; font-family: Poppins; color: white; font-size: 80%; margin-top: 5%;"> Copyright © ℗ Reserved </p>
+              <hr style="width: 90%; margin-left: 5%; margin-top: 5%; margin-bottom: 10%; border-width: 0.01%; border-color: white;">
+
+            </div>
+
+            <div id="footer3">
+
+              <span>Photo by <a href="https://unsplash.com/@florianolv?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Florian Olivo</a> on <a href="https://unsplash.com/s/photos/html?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@akin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Akin Cakiner</a> on <a href="https://unsplash.com/s/photos/car-light?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@aviosly?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Avi Waxman</a> on <a href="https://unsplash.com/s/photos/racing-drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ThisisEngineering RAEng</a> on <a href="https://unsplash.com/s/photos/soldering?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+              <span>Photo by <a href="https://unsplash.com/@dose?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dose Media</a> on <a href="https://unsplash.com/s/photos/drone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+            </div>
+
+          </div>
+
+         
+
+  
+      </body>
+
+</html>

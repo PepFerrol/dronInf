@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <title>Fpv Drones</title>
+
+        <link href="./styleFpv.css" rel="stylesheet" type="text/css" />
+        <script src="./scriptFpv.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./img/prop2.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">  
+      
+      </head> 
+
+      <body>
+
+
+        <div class="topnav" id="Topnavi">
+         
+          <a href="./index.html" class="active"> DRONE <br> INFO </a>
+          <a href="#footer2">About</a>
+          <a href="#contact">Photography</a>
+          <a href="./drone.html">Drone</a>
+          <a href="./fpv.html">FPV</a>
+          <a href="./dicc.html">Diccionaire</a>
+          <a href="javascript:void(0);" class="icon" onclick="menuClick()">
+            <p class="fa fa-bars">=</p>
+          </a>
+
+          
+          <input type="text" id="buscador" onkeyup="buscar()" placeholder="Search...  " title="Search">
+          
+          <div class="divBuscar" id="divBuscar">
+            
+            <li id="closeBuscarLi" onclick="closeBuscar()"> × </li>
+          <ul class="llistaBuscar" id="llistaBuscar">
+            <li><a href="#">Drone</a></li>
+            <li><a href="#">Motors</a></li>
+            <li><a href="#">ESC</a></li>
+            <li><a href="#">Fpv camera</a></li>
+            <li><a href="#">Flight Controler (FC)</a></li>
+            <li><a href="#">VTX</a></li>
+            <li><a href="#">Antennas</a></li>
+            <li><a href="#">Googles</a></li>
+            <li><a href="#">Simulators</a></li>
+            <li><a href="#">Transmitter</a></li>
+            <li><a href="./fpv.html">FPV</a></li>
+            <li><a href="#">Cinematic</a></li>
+            <li><a href="#">DJI</a></li>
+            <li><a href="#">Cinewhoop</a></li>
+            <li><a href="#">Builds</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Restrictions</a></li>
+            <li><a href="#">Where to fly</a></li>
+            <li><a href="#">Parts</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Long Range</a></li>
+            <li><a href="#">Freestyle</a></li>
+            <li><a href="#">Profesional</a></li>
+            
+          </ul>
+          </div>
+
+          <script>
+            function closeBuscar(){
+              document.getElementById("divBuscar").style.display = "none";
+              document.getElementById("buscador").value = "";
+            }
+
+            function buscar() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("buscador");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("llistaBuscar");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+
+            <script>
+              var input = document.getElementById("buscador");
+
+              input.addEventListener("keyup", function(event) {
+             
+              if (event.keyCode === 13) {              
+                event.preventDefault();
+                document.getElementById("divBuscar").style.display = "block";
+                }
+              });
+            </script>
+
+        </div>
+
+        <div id="divIntro">
+          <div class="divIntroAnimation">
+              <p id="tittleIntro" class="tittleIntro"> FPV Drones </p>
+              <p id="subTittleIntro"> See and learn about racing drones.  </p>
+          </div>
+        </div>
+
+        <div class="info">
+
+          <p class="tittleInf">What is Fpv?</p>
+          <p class="textInf">FPV or <em> "first person view" </em> it's a very fun and immersive way to fly a drone, which has become popular in recent years. 
+            <br>
+            <br> 
+            It is a system that allows pilots to observe a live view from the front of their craft. Basically, an FPV camera sends images to the video transmitter (VTX) which is then transmitted to a set of FPV goggles that the pilot can observe.  FPV allows you to fly much higher and further than you could do from a fixed position , and have more precision while flying around obstacles , indoors or through a forest. 
+            <br>
+            <br>
+            This new technology has opened up a lot of possibilities in a variety of fields like drone racing, in agriculture, photography, freestyle, . . .   
+          <p class="tittleInf2">Racing</p>
+          <p class="tittleInf2">Freestyle</p>
+          <p class="tittleInf2">Aerial photography</p>
+            <ul class="llistaLens">
+                <li>1.2 mm lens – 185°</li>
+                <li>1.7 mm lens – 170°</li>
+                <li>2.1 mm lens – 158°</li>
+                <li>2.5 mm lens – 147°</li>
+                <li>2.8 mm lens – 130°</li>
+                <li>3.0 mm lens – 127°</li>
+                <li>3.6 mm lens – 92°</li>
+                <li>4.0 mm lens – 88°</li>
+                <li>6.0 mm lens – 78°</li>
+            </ul>
+            
+          </p>
+        
+        </div>
+
+
+          <div id="footer">
+
+            <div id="footer1">
+
+              
+              <p style="font-family: Poppins ExtraBold; margin-top: 5%; margin-left: 40%; color: white; font-size: 110%; margin-bottom: 3%;"> Navigate </p>
+              <a id="footMenu" href="#top"> · Home </a> <br>
+              <a id="footMenu" href="" > · About Us </a> <br>
+              <a id="footMenu" href=""> · Discover </a> <br>
+              <a id="footMenu" href=""> · Ways </a> <br>
+
+              <p style="color: white; font-family: Poppins ExtraBold; font-size: 110%; margin-bottom: 5%; margin-left: 40%; margin-top: 12%;"> About Us </p>
+              <p id="aboutFoot"> Uiwuh ijfis dfkjndsfijksdjfni uin sk  udj  khsdbf hsbkdhfi sdu jskdufidjiw jiwksdj i. </p>
+
+            </div>
+
+            <div id="footer2">
+
+              <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      
+                <input id="buttonIn" type="submit" value="Contact">
+               
+              </form>
+
+              <p style="text-align: center; font-family: Poppins; color: white; font-size: 80%; margin-top: 5%;"> Copyright © ℗ Reserved </p>
+              <hr style="width: 90%; margin-left: 5%; margin-top: 5%; margin-bottom: 10%; border-width: 0.01%; border-color: white;">
+
+            </div>
+
+            <div id="footer3">
+
+              <span>Photo by <a href="https://unsplash.com/@lilian_velet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lilian Velet</a> on <a href="https://unsplash.com/s/photos/drone%20fpv?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+            </div>
+
+          </div>
+
+         
+
+  
+      </body>
+
+</html>

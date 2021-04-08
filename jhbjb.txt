@@ -1,0 +1,70 @@
+input type="text" id="buscador" onkeyup="buscar()" placeholder="Search...  " title="Search">
+         
+          <div class="divBuscar" id="divBuscar">
+            
+            <li id="closeBuscarLi" onclick="closeBuscar()"> × </li>
+            <ul class="llistaBuscar" id="llistaBuscar">
+              <li><a href="#">Drone</a></li>
+              <li><a href="#">Motors</a></li>
+              <li><a href="#">ESC</a></li>
+              <li><a href="#">Fpv camera</a></li>
+              <li><a href="#">Flight Controler (FC)</a></li>
+              <li><a href="#">VTX</a></li>
+              <li><a href="#">Antennas</a></li>
+              <li><a href="#">Googles</a></li>
+              <li><a href="#">Simulators</a></li>
+              <li><a href="#">Transmitter</a></li>
+              <li><a href="./fpv.html">FPV</a></li>
+              <li><a href="#">Cinematic</a></li>
+              <li><a href="#">DJI</a></li>
+              <li><a href="#">Cinewhoop</a></li>
+              <li><a href="#">Builds</a></li>
+              <li><a href="#">Buy</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Restrictions</a></li>
+              <li><a href="#">Where to fly</a></li>
+              <li><a href="#">Parts</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Long Range</a></li>
+              <li><a href="#">Freestyle</a></li>
+              <li><a href="#">Profesional</a></li>
+              
+            </ul>
+            
+          </div>
+
+          <script>
+            function closeBuscar(){
+              document.getElementById("divBuscar").style.display = "none";
+              document.getElementById("buscador").value = "";
+            }
+
+            function buscar() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("buscador");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("llistaBuscar");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+
+            <script>
+              var input = document.getElementById("buscador");
+
+              input.addEventListener("keyup", function(event) {
+             
+              if (event.keyCode === 13) {              
+                event.preventDefault();
+                document.getElementById("divBuscar").style.display = "block";
+                }
+              });
+            </script>
